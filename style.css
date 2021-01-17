@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+*{
+   padding:0px;
+   margin: 0px;
+   box-sizing: border-box;
+   overflow:none;
+   font-family: 'Montserrat', sans-serif;
+}
+/* Home page  */
+                              /* navbar */
+nav{
+   background:rgba(0, 0, 0, 0.8);
+   font-size: 2rem;
+   margin: 20px;
+}
+nav ul li a{
+   font-size: 1.8rem;
+    margin: 2rem;
+   color: white;
+   font-family: 'Open Sans Condensed', sans-serif;
+   }
+   
+nav ul li a:hover{
+      border-bottom: 3px solid greenyellow;
+}
+                    
+            /* .carousel */
+
+.carousel-caption{
+ position: absolute;
+ top: 150px;
+ color: green;
+   }
+ .carousel-caption span{
+   color: white;
+   font-size: 2rem;
+   background-color: yellowgreen;
+             }
+
+#slider{
+   position:absolute;
+   top: 0%;
+   left: 0%;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+}
+video{
+   width: 1352px;
+   height: 744px;
+
+}
+
+/* sign up form  */
+.textbox{
+   width: 60%;
+   overflow: hidden;
+   font-size: 20px;
+   padding: 8px 0;
+   margin: 8px 0px;
+  border-bottom: 1px solid #4caf50;
+   
+}
+.textbox i{
+width: 1px;
+font-size: 2rem;
+}
+.textbox input{
+border: none;
+outline: none;
+background:none;
+font-size:1.5rem;
+text-align: center;
+}
+
+#footer{
+   position: relative;
+   top: 560px;
+   left: 0px;
+   background-color: green;
+}
+#footer .footer_data{
+   display: inline-block;
+   font-size: 1.3rem;
+   color: white;
+   margin-left: 120px;
+   text-align: center;
+
+}
+
+/* team section  */
+
+.team{
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden;
+}
+.cardHover{
+   width: 300px;
+   background:#fff;
+   box-shadow: 0 0 5px #bababa;
+   position: relative;
+   margin: 10px auto;
+}
+.cardHover img{
+width: 100%;
+height: auto;
+display: block; 
+}
+
+.cardHover .cardHoverContent .social li{
+   list-style: none;
+   display: inline-block;
+ }
+.cardHover .cardHoverContent{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+}
+.cardHover .cardHoverContent::before,
+.cardHover .cardHoverContent::after{
+content: "";
+width: 95%;
+height: 47%;
+background: rgb(46, 45, 45);
+position: absolute;
+right: 0;
+left: 0;
+margin: auto;
+transition: all 0.6s;
+opacity: 0;
+text-align: center;
+}
+cardHover .cardHoverContent::before{
+top: -20%;
+}
+.cardHover .cardHoverContent::after{
+bottom: -20%;
+}
+.cardHover:hover .cardHoverContent::before{
+top: 3%;
+opacity: 0.7;
+}
+
+.cardHover:hover .cardHoverContent::after{
+bottom: 3%;
+opacity: 0.7;
+}
+.cardHover .content{
+width: 100%;
+height: 45%;
+position: absolute;
+top: 50%;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+text-align: center;
+opacity: 0;
+transform: rotate(90deg);
+transition: all 0.5s;
+}
+.cardHover .content:hover{
+opacity: 1;
+color: white;
+transform: rotate(0deg);
+font-size: 2rem;
+}
+
+/* contact us */
+.contact{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   /* overflow: hidden; */
+}
+.contact_info {
+   background-color: rgb(184, 238, 83);
+   box-shadow: 0px 0px 20px #000;
+   position: relative;
+   overflow: hidden;
+   right: 100px;
+}
+.contact_info h2{
+color: goldenrod;
+font-size: 24px;
+font-weight: 500;
+margin: 15px;
+text-decoration: underline;
+font-family: 'Merriweather', serif;
+}
+.contact .contact_info .info{
+   position: relative;
+   margin: 20px 0px;
+}
+.info li{
+list-style: none;
+font-size: 1rem;
+}
+.info li i{
+font-size: 2rem;
+margin-right: 15px;
+color: white;
+margin-bottom: 35px;
+}
+.contact_info .social{
+   position: relative;
+   display: flex;
+   top: 1rem;
+}
+
+.contact_info .social li{
+   list-style: none;
+   margin-right: 15px;
+}
+ .contact_info .social li a{
+   text-decoration: none;
+}
+.contact_info .social li a i{
+   filter: invert(1);
+   font-size: 2rem;
+   padding-left: 10px;
+   opacity: 0.5;
+}
+.contact_info .social li:hover a i{
+   opacity: 1;
+}
+
+.contact_us{
+   /* border:3px solid yellow; */
+   box-shadow: 0px 0px 20px #000;
+   width: 700px;
+    
+}
+.contact_us h2{
+   font-family: 'Merriweather', serif;
+   margin:15px;
+   border-bottom: 3px solid green;
+   color: white;
+}
+.contact_us input{
+  margin: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 1rem;
+  padding: 10px;
+   
+}
+.contact_us textarea{
+      width: 650px;
+      margin-left: 25px;
+      height: 100px;
+      padding: 10px;
+}
+.contact_us{
+   background: url(./img/contact_tree.jpg);
+}
+
+/* Achievement */
+
+.NGO_info{
+   text-align: center;
+}
+.jumbotron .card{
+   box-shadow: 0px 0px 5px green;
+}
+.work_done{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+   margin: 1rem;
+}
+.workimg{
+   width: 300px;
+   box-shadow: 0px 0px 10px #000;
+
+} 
+.workimg img{
+   width: 100px;
+} 
+
+/* join us  */
+.join_us{
+   background-color: rgba(190, 245, 108,0.8);
+   display: flex;
+   justify-content: center;
+   padding: 5px;
+   overflow: hidden;
+}
+
+.join_us .text{
+   width: 800px;
+   text-align:center;
+   font-size: 1rem;
+}
+.join_us ul{
+   list-style:none;
+}
+.join_us_img{
+   width: 250px;
+   display: flex;
+   justify-content: center;
+   height: 45px;
+   position: relative;
+   left: 100px;
+}
+.join_us_img img{
+   width: 80px;
+   height:150px;
+}
+
+  
+/* Phone  */
+ 
+@media screen and (max-width: 768px) {
+   /* home section  */
+   nav {
+      margin: 5px;
+   }
+   nav ul li a{
+      font-size: 1.5rem;
+       margin: 1.2rem;
+      color: white;
+      }
+
+   .carousel-caption{
+      position: absolute;
+      top: 300px;
+      color: green;
+      }
+      .carousel-caption h2{
+         font-size: 3rem;
+      }
+      .carousel-caption p{
+        color: white;
+        font-size: 2rem;
+        background-color: greenyellow;
+      }
+      #footer{
+         position: relative;
+         top: 560px;
+         left: 0px;
+         background-color: green;
+      }
+      #footer .footer_data{
+         display: inline-block;
+         font-size: 1rem;
+         color: white;
+         margin-left: 100px;
+         text-align: center;
+      
+      }
+      #footer .copyright{
+         margin-left: 10px;
+         font-size: 1rem;
+      
+      }
+      /* team  section */
+      .contact_us{
+         box-shadow: 0px 0px 2px #000;
+         width: 300px;
+         padding: 10px;
+      }
+      .contact_us input{
+         margin: 20px;
+         width: 200px;
+         height: 40px;
+         font-size: 1.2rem;
+         padding: 5px;
+         border: none;
+         outline: none;
+        background:none;
+        border-bottom: 3px solid greenyellow;   
+       }
+       .contact_us textarea{
+             width: 200px;
+             margin-left: 25px;
+             height: 100px;
+             padding: 10px;
+             border: none;
+             outline: none;
+            background:none;
+            border-bottom: 3px solid greenyellow;
+         
+         }
+         .contact_us{
+            background:white;
+         }
+         .contact_info {
+            background-color: rgb(184, 238, 83);
+            box-shadow: 0px 0px 10px #000;
+            position: relative;
+            overflow: hidden;
+            right: 0px;
+            margin-bottom: 50px;
+         }
+         
+         .contact_info h2{
+            margin: 10px;
+         }
+         .mywork{
+            margin-left: 30px;
+         }      
+        .mywork .card{
+           margin: 10px;
+        }
+     
+    /* sign up form  */
+
+    .textbox input{
+       font-size:1rem;
+            }
+}
+
+
+
+

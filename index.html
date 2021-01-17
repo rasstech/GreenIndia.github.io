@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+<!-- bootstrap file cdn -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- css file  cdn -->
+   <link rel="stylesheet" href="./style.css">
+ <!--  font-awesome cdn -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+</head>
+ 
+ <body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand m-3" style="color: white; font-size: 2.5rem; font-family: 'Roboto Condensed', sans-serif;"><span style="color:green">Green</span> India</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./team.html">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./achievements.html">Achievement</a>
+        </li>
+       </ul>
+    </div>
+  </div>
+</nav> 
+
+                           <!-- carousel -->
+<section id="slider">
+<div id="video-carousel-example" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#video-carousel-example" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#video-carousel-example" data-bs-slide-to="1"></li>
+    <li data-bs-target="#video-carousel-example" data-bs-slide-to="2"></li>
+  </ol>
+
+<div class="carousel-inner" role="listbox">
+    <div class="carousel-item active" >
+      <video  class="video-fluid" autoplay loop muted >
+         <source src="./video/video1.mp4" type="video/mp4">
+      </video>
+      <div class="carousel-caption font-weight-bold">
+        <h3>Green INDIA </h3>
+  <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#mymodal">Join Us</button>
+      <span>Take a stand for the love of green</span>
+      </div>
+    </div>
+
+      <div class="carousel-item">
+      <video  class="video-fluid" autoplay loop muted >
+         <source src="./video/video2.mp4" type="video/mp4">
+      </video>
+      <div class="carousel-caption font-weight-bold ">
+        <h2>304,300+</h2>
+        <span>Trees Planted</span>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mymodal">Join Us</button>
+
+      </div>
+    </div>
+
+      <div class="carousel-item">
+      <video  class="video-fluid" autoplay loop muted >
+         <source src="./video/video3.mp4" type="video/mp4">
+      </video>
+      <div class="carousel-caption font-weight-bold ">
+        <h2>182,200+</h2>
+        <span>FARMERS AND FAMILIES SUPPORTED</span>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mymodal">Join Us</button>
+      </div>
+    </div>
+
+
+</div>
+    
+  <a class="carousel-control-prev" href="#video-carousel-example" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"></span>
+  </a>
+  <a class="carousel-control-next" href="#video-carousel-example" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only"></span>
+  </a>
+</div>
+
+</section>
+
+                <!-- footer  -->
+
+<section id="footer">
+   <p class="footer_data"><i class="far fa-envelope"></i>
+    <span>GreenIndia@gmail.com</span></p>
+   <p class="footer_data"><i class="fas fa-phone-square"></i>
+    <span>+908-543-5445</span></p>
+  <p class="footer_data copyright">Copyright &copy2020 Green INDIA All Rights Reserved</p>  
+</section>
+
+
+<!--join us popup form  -->
+ 
+<div class="modal fade" id="mymodal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="index.html">
+            <div class="formBox"style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <Div class="textbox" >
+                <i class="fa fa-user" aria-hidden="true"></i> 
+             <input type="text" name="" required placeholder="Name">
+              </Div>
+              <Div class="textbox" >
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+             <input type="email" name="" required placeholder="Email" >
+              </Div>
+              <Div class="textbox">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+             <input type="number" name="" required placeholder="Contact Number">
+              </Div>
+           </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div></form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
